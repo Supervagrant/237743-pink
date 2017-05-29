@@ -6,41 +6,124 @@
   </head>
   <body>
     <header class="page-header">
-      <h1 class="page-header__title">Приложение Pink</h1>   <--!  скрыт! -->
-      <div class="main-nav__wrapper">
-        <nav class="main-nav">
-          <a class="page-header__logo"><img src="http://placehold.it/150x100" width="75" height="22" alt="Логотип приложения Пинк"></a>
-          <span class="main-nav__toggler"><span></span></span>
-          <ul clas="main-nav__list">
-            <li class="main-nav__item"><a>Главная</a></li>
-            <li class="main-nav__item"><a href="#">Фотографии</a></li>
-            <li class="main-nav__item"><a href="#">Конкурс</a></li>
-            <li class="main-nav__item"><a href="#">HTML academy</a></li>
-          </ul>
-        </nav>
-      </div>
+      <h1 class="page-header__title">Приложение Pink</h1>   <!-- скрыть! -->
+      <nav class="main-nav">
+        <a class="page-header__logo"><img src="http://placehold.it/150x100" width="75" height="22" alt="Логотип приложения Пинк"></a>
+        <span class="main-nav__toggler"><span></span></span>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a>Главная</a></li>
+          <li class="main-nav__item"><a href="#">Фотографии</a></li>
+          <li class="main-nav__item"><a href="#">Конкурс</a></li>
+          <li class="main-nav__item"><a href="#">HTML academy</a></li>
+        </ul>
+      </nav>
     </header>
     <main class="page-main">
-      <div class="main-wrapper">
-        <section class="downloads">
-          <img src="http://placehold.it/150x100" width="320" height="462" alt="Пример применения приложения Пинк">
-          <a href="#" class="btn btn--downoloads">Скачать приложение</a>
-          <div class="downloads__os-choice">
-            <a href="#" class="downloads__os downloads__os--ios">ios</a>
-            <a href="#" class="downloads__os downloads__os--android">android</a>
-            <a href="#" class="downloads__os downloads__os--windows">windows</a>
+      <section class="downloads">
+        <img src="http://placehold.it/150x100" width="320" height="462" alt="Пример применения приложения Пинк">
+        <a href="#" class="btn btn--downoloads">Скачать приложение</a>
+        <div class="downloads__os-choice">
+          <a href="#" class="downloads__os downloads__os--ios">ios</a>
+          <a href="#" class="downloads__os downloads__os--android">android</a>
+          <a href="#" class="downloads__os downloads__os--windows">windows</a>
+        </div>
+        <p class="downloads__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </section>
+      <section class="promo">
+        <div class="promo__header">
+          <p class="promo__header-text">Устали от серости мегаполиса?</p>
+          <p class="promo__header-text">Нам есть, что вам предложить!</p>
+        </div>
+        <div class="promo__description">
+          <div class="promo__thesis-wrapper">
+            <b class="promo__thesis-header">Поднимает настроение</b>
+            <p class="promo__thesis-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </div>
-          <p class="downloads__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-        </section>
-        <section class="promo">
-          <div class="promo__header">
-            <p class="promo__header-text">Устали от серости мегаполиса?</p>
-            <p class="promo__header-text">Нам есть, что вам предложить!</p>
+          <div class="promo__thesis-wrapper">
+            <b class="promo__thesis-header">Меняет мир вокруг</b>
+            <p class="promo__thesis-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </div>
-        </section>
-      </div>
+          <div class="promo__thesis-wrapper">
+            <b class="promo__thesis-header">Заводит новых друзей</b>
+            <p class="promo__thesis-text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <input class="switches__input" type="radio" name="toggle-switch" value="toggle1" id="toggle1" checked>
+        <input class="switches__input" type="radio" name="toggle-switch" value="toggle2" id="toggle2" >
+        <input class="switches__input" type="radio" name="toggle-switch" value="toggle3" id="toggle3">
+        <div class="reviews__item reviews__item--1">
+          <b class="reviews__author-name">Николай Петров</b>
+          <p class="reviews__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </div>
+        <div class="reviews__item reviews__item--2">
+          <b class="reviews__author-name">Иван Иванов</b>
+          <p class="reviews__content">"Я - директор, очень суров по природе. Мои подчиненные посоветовали мне Pink, чтобы я стал смотреть на мир через розовые очки и подобрел. Это и вправду помогло! Я даже всем повысил зарплату!"</p>
+        </div>
+        <div class="reviews__item reviews__item--3">
+          <b class="reviews__author-name">Петр Петров</b>
+          <p class="reviews__content">"Я - блогер, и мне всегда нехватало новых подписчиков, я не знал, чем их удивить. Но с появлением в моей жизни нового приложения у меня больше нет таких проблем! Мой аккаунт всегда можно узнать среди тысяч других аккаунтов моих конкурентов."</p>
+        </div>
+        <div class="switches">
+          <label class="switches__item" for="toggle1"></label>
+          <label class="switches__item" for="toggle2"></label>
+          <label class="switches__item" for="toggle3"></label>
+        </div>
+      </section>
+      <section class="rates">
+        <input class="switches__input" type="radio" name="rates-switch" value="price1" id="price1">
+        <input class="switches__input" type="radio" name="rates-switch" value="price2" id="price2" checked>
+        <input class="switches__input" type="radio" name="rates-switch" value="price3" id="price3">
+        <table class="rates__table">
+          <tr>
+            <th class="rates__table-header"></th>
+            <th class="rates__table-header"><span class="rates__table-header-bold">стандарт</span>3,99 usd</th>
+            <th class="rates__table-header"></th>
+          </tr>
+          <tr>
+            <td class="rates__table-item"></td>
+            <td class="rates__table-item rates__table-item--included">Розовый фильтр</td>
+            <td class="rates__table-item"></td>
+          </tr>
+          <tr>
+            <td class="rates__table-item"></td>
+            <td class="rates__table-item rates__table-item--included">Смайлики</td>
+            <td class="rates__table-item"></td>
+          </tr>
+          <tr>
+            <td class="rates__table-item"></td>
+            <td class="rates__table-item rates__table-item--not-included">Комментарии</td>
+            <td class="rates__table-item"></td>
+            </tr>
+        </table>
+        <div class="switches switches--rates">
+          <label class="switches__item" for="price1"></label>
+          <label class="switches__item" for="price2"></label>
+          <label class="switches__item" for="price3"></label>
+        </div>
+      </section>
+      <section class="contacts">
+        <p class="contacts__header">Остались вопросы? Свяжитесь с нами!</p>
+        <div class="contacts__items-container">
+          <div class="contacts__item-wrapper">
+            <b class="contacts__item-header">Звоните:</b>
+            <span class="contacts__item">+7 (812) 555-66-66</span>
+          </div>
+          <div class="contacts__item-wrapper">
+            <b class="contacts__item-header">Пишите:</b>
+            <span class="contacts__item">mail@htmlacademy.ru</span>
+          </div>
+          <div class="contacts__item-wrapper">
+            <b class="contacts__item-header">Приезжайте в гости:</b>
+            <span class="contacts__item">ул. Большая Конюшенная, 19/8</span>
+          </div>
+        </div>
+        <div class="contacts__map">
+          <!--<img src="http://placehold.it/150x100" width="320" height="645" alt="Расположение нашего офиса"> -->
+          <iframe src="#" width="1200" height="320" style="border:0" allowfullscreen></iframe>
+        </div>
+      </section>
     </main>
-
-
   </body>
 </html>
