@@ -6,10 +6,15 @@
   </head>
   <body>
     <header class="page-header">
-      <h1 class="page-header__title">Приложение Pink</h1>   <!-- скрыть! -->
+      <h1 class="page-header__title page-header__title--hidden">Приложение Pink</h1>   <!-- скрыть! -->
       <nav class="main-nav">
         <a class="page-header__logo"><img src="http://placehold.it/150x100" width="75" height="22" alt="Логотип приложения Пинк"></a>
-        <span class="main-nav__toggler"><span></span></span>
+        <div class="toggle-nav">
+          <input id="toggle" type="checkbox" class="toggle-nav__behavior">
+          <label class="toggle-nav__container" for="toggle">
+            <span class="toggle-nav__button-toggle"></span>
+          </label>
+        </div>
         <ul class="main-nav__list">
           <li class="main-nav__item"><a>Главная</a></li>
           <li class="main-nav__item"><a href="#">Фотографии</a></li>
