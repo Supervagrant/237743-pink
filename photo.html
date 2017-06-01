@@ -9,16 +9,14 @@
       <nav class="main-nav">
         <a class="page-header__logo" href="index.html"><img src="http://placehold.it/150x100" width="75" height="22" alt="Логотип приложения Пинк"></a>
         <div class="toggle-nav">
-          <input id="toggle" type="checkbox" class="toggle-nav__behavior">
-          <label class="toggle-nav__container" for="toggle">
-            <span class="toggle-nav__button-toggle"></span>
-          </label>
+          <button class="toggle-nav__hamburger"></button>
+          <button class="oggle-nav__cross"></button>
         </div>
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="index.html">Главная</a></li>
-          <li class="main-nav__item"><a href="#">Фотографии</a></li>
-          <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-          <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML academy</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link">Фотографии</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/">HTML academy</a></li>
         </ul>
       </nav>
       <h1 class="page-header__title">Фотографии пользователей</h1>
@@ -30,8 +28,6 @@
         <a class="user-post__image-wrapper">
           <img src="http://placehold.it/150x100" class="user-post__photo-best" width="320" height="137" alt="Фотография пользователя">
         </a>
-        <div class="user-post__best-panorama">ПАНОРАМА ДНЯ
-        </div>
         <div class="user-post__message">
           <div class="user-post__user-info">
             <span class="user-post__user-name">Анна</span>
@@ -39,7 +35,10 @@
           </div>
           <p class="user-post__message-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
           </p>
-          <button class="user-post__rating-btn">нравится: 215</button>
+          <div class="user-post__rating">
+            <button class="user-post__rating-btn"></button>
+            <span class="user-post__rating-like">нравится: 215</span>
+          </div>
         </div>
       </article>
       <article class="user-post">
@@ -53,7 +52,10 @@
           </div>
           <p class="user-post__message-text">Вчера он на луну летал, сегодня в руки к нам попал.
           </p>
-          <button class="user-post__rating-btn">Нравится: 356</button>
+          <div class="user-post__rating">
+            <button class="user-post__rating-btn"></button>
+            <span class="user-post__rating-like">Нравится: 356</span>
+          </div>
         </div>
       </article>
       <article class="user-post">
@@ -67,7 +69,10 @@
           </div>
           <p class="user-post__message-text">Соседи будут рады!
           </p>
-          <button class="user-post__rating-btn">Нравится: 666</button>
+          <div class="user-post__rating">
+            <button class="user-post__rating-btn"></button>
+            <span class="user-post__rating-like">Нравится: 666</span>
+          </div>
         </div>
       </article>
       <article class="user-post">
@@ -81,7 +86,10 @@
           </div>
           <p class="user-post__message-text">Здесь могла быть ваша цитата о высоком и вечном.
           </p>
-          <button class="user-post__rating-btn">Нравится: 215</button>
+          <div class="user-post__rating">
+            <button class="user-post__rating-btn"></button>
+            <span class="user-post__rating-like">Нравится: 215</span>
+          </div>
         </div>
       </article>
       <article class="user-post">
@@ -95,7 +103,10 @@
           </div>
           <p class="user-post__message-text">Самая кубанская в мире!
           </p>
-          <button class="user-post__rating-btn">Нравится: 4</button>
+          <div class="user-post__rating">
+            <button class="user-post__rating-btn"></button>
+            <span class="user-post__rating-like">Нравится: 4</span>
+          </div>
         </div>
       </article>
       <article class="user-post">
@@ -109,7 +120,10 @@
           </div>
           <p class="user-post__message-text">Где снег-то?
           </p>
-          <button class="user-post__rating-btn">Нравится: 150</button>
+          <div class="user-post__rating">
+            <button class="user-post__rating-btn"></button>
+            <span class="user-post__rating-like">Нравится: 150</span>
+          </div>
         </div>
       </article>
       <article class="user-post">
@@ -123,7 +137,10 @@
           </div>
           <p class="user-post__message-text">Всем GM и взаимные лайки!
           </p>
-          <button class="user-post__rating-btn">Нравится: 2560</button>
+          <div class="user-post__rating">
+            <button class="user-post__rating-btn"></button>
+            <span class="user-post__rating-like">Нравится: 2560</span>
+          </div>
         </div>
       </article>
       <p class="photo-promo-text">Затмите их всех!<br>
@@ -159,9 +176,9 @@
         <a class="footer-logo__link" href="index.html"><img src="http://placehold.it/150x100" width="147" height="40" alt="Логотип компании Пинк">PINK</a>
       </div>
       <div class="social">
-        <a class="social-item social-item--twitter" href="https://twitter.com/htmlacademy_ru">twitter</a>
-        <a class="social-item social-item--facebook" href="https://www.facebook.com/htmlacademy">facebook</a>
-        <a class="social-item social-item--youtube" href="https://www.youtube.com/user/htmlacademyru">youtube</a>
+        <a class="social__item social__item--twitter" href="https://twitter.com/htmlacademy_ru">twitter</a>
+        <a class="social__item social__item--facebook" href="https://www.facebook.com/htmlacademy">facebook</a>
+        <a class="social__item social__item--youtube" href="https://www.youtube.com/user/htmlacademyru">youtube</a>
       </div>
       <div class="copyright">
         <p class="copyright__description">Разработано</p>
