@@ -1,5 +1,22 @@
 .page-header {
-  background-color: #243344;
+  position: relative;
+  min-height:  462px;
+  background: url(../img/bg-back-mobile@1x.jpg) no-repeat 50% 0 #2b3b4b;
+  //background-size: 462px auto;
+}
+.page-header__logo {
+  margin-left: 20px;
+  cursor: pointer;
+}
+.page-header:after {
+  content:'';
+  width: 258px;
+  height: 286px;
+  bottom: 0px;
+  left: 0px;
+  background: url("../img/iphone-hand-mobile@1x.png") no-repeat 90% 0;
+  background-size: auto 286px;
+  position: absolute;
 }
 .page-header__title {
   width: 320px;
