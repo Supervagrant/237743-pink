@@ -278,13 +278,11 @@ body {
   font-size: 0;
 }
 .form-group {
-  padding-bottom: 42px;
+  width: 100%;
+  box-sizing: border-box;
   border: none;
 }
 .form-group--bg-grey {
-  background-color: #f3f3f3;
-}
-.form-group__checkbox-promo {
   background-color: #f3f3f3;
 }
 .form-group__promo {
@@ -335,7 +333,7 @@ body {
   width: 220px;
   margin: 0 auto;
   margin-bottom: 40px;
-  padding-top: 41px;
+  padding-top: 108px;
   color: #d22856;
   font-size: 14px;
   line-height: 18px;
@@ -411,22 +409,41 @@ body {
   border-radius: 3px;
   cursor: pointer;
 }
+.form-group--contacts {
+  padding: 0 19px;
+  padding-top: 28px;
+}
 .main-nav__list {
+  position: absolute;
+  top: 66;
+  right: 0;
+  z-index: 1;
+  width: 100%;
   list-style: none;
   padding: 0px;
   margin: 0px;
+  background-color: #243344;
+}
+.main-nav__logo-wrapper {
+  width: 320px;
+  height: 66px;
+  box-sizing: border-box;
+  padding-top: 21px;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .main-nav__item {
-  display: -ms-flexbox;
-  display: flex;
-  lex-direction: column;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  width: 320px;
-  height: 63px;
-  box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  display: block;
+  line-height: 32px;
+  padding: 15px 0;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  background: #283645;
+  border-top: 1px solid #495562;
+  border-bottom: 1px solid #030303;
 }
 .main-nav__link {
   color: #ffffff;
@@ -438,7 +455,23 @@ body {
   text-decoration: none;
 }
 .page-header {
-  background-color: #243344;
+  position: relative;
+  min-height: 462px;
+  background: url(../img/bg-back-mobile@1x.jpg) no-repeat 50% 0 #2b3b4b;
+}
+.page-header__logo {
+  margin-left: 20px;
+  cursor: pointer;
+}
+.page-header:after {
+  content: '';
+  width: 258px;
+  height: 286px;
+  bottom: 0px;
+  left: 0px;
+  background: url("../img/iphone-hand-mobile@1x.png") no-repeat 90% 0;
+  background-size: auto 286px;
+  position: absolute;
 }
 .page-header__title {
   width: 320px;
