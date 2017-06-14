@@ -1,14 +1,15 @@
-var link = document.querySelectorAll(".toggle-nav__btn");
 
-var popup = document.querySelectorAll(".toggle-nav__cross");
-
-var login = popup.querySelectorAll("[name=date-arrival]");
+var menuOpen = document.querySelector (".toggle-nav__btn");
+var menuPopup = document.querySelector(".toggle-nav__cross");
 
 
 
-
-
-link.addEventListener("click", function(event) {
+menuOpen.addEventListener("click", function(event) {
   event.preventDefault();
-  link.classList.toggle("toggle-nav__cross");
+  menuOpen.classList.toggle("toggle-nav__cross");
+});
+
+menuPopup.addEventListener("click", function(event) {
+  event.preventDefault();
+  menuPopup.classList.toggle("toggle-nav__cross");
 });
