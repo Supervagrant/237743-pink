@@ -1,19 +1,9 @@
-var menuOpen = document.querySelector (".toggle-nav__btn");
-var menuPopup = document.querySelector(".toggle-nav__cross");
-var menuClose = document.querySelector(".main-nav__list--closed");
-var menuView = document.querySelector(".main-nav__list");
+var container = document.querySelector(".main-nav__list");
+container.classList.remove('no-js');
 
+var button = document.querySelector(".toggle-menu--closed");
 
-
-
-menuOpen.addEventListener("click", function(event) {
-  event.preventDefault();
-  menuOpen.classList.toggle("toggle-nav__cross");
-  menuClose.classList.remove("main-nav__list--closed");
+button.addEventListener("click", function() {
+    container.classList.toggle("main-nav__list--hided");
+    button.classList.toggle("toggle-menu");
 });
-menuPopup.addEventListener("click", function(event) {
-  event.preventDefault();
-  menuPopup.classList.toggle("toggle-nav__btn");
-  menuView.classList.remove("main-nav__list");
-});
-

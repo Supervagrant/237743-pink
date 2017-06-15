@@ -1,4 +1,15 @@
-.toggle-nav__btn {
+.toggle-menu--closed {
+  width: 24px;
+  height: 23px;
+  top: 21px;
+  right: 19px;
+  position: absolute;
+  background-image: url("../img/icon-menu-cross.svg");
+  background-color: inherit;
+  border: 0;
+  cursor: pointer;
+}
+.toggle-menu {
   width: 50px;
   height: 24px;
   top: 21px;
@@ -9,14 +20,6 @@
   border: 0;
   cursor: pointer;
 }
-.toggle-nav__cross {
-  width: 24px;
-  height: 23px;
-    top: 21px;
-  right: 19px;
-  position: absolute;
-  background-image: url("../img/icon-menu-cross.svg");
-  background-color: inherit;
-  border: 0;
-  cursor: pointer;
+.no-js .toggle-menu {
+  display:none;
 }
