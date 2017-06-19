@@ -1,21 +1,68 @@
 .rates {
-  background-color: @form-bg-grey;
+  position: relative;
+  padding-top: 65px;
+  padding-bottom: 51px;
+
+  overflow: hidden;
+
+  background: @bg-photo-form;
+}
+.rates__table {
+  width: 840px;
+  margin-bottom: 44px;
+
+  background: white;
+  border-collapse: collapse;
 }
 .rates__table-header {
+  position: relative;
   height: 98px;
+  overflow: hidden;
   background-color: @header-bg;
   border: 2px solid @border-input;
+   border-top: none;
+  border-bottom: none;
   color: #ffffff;
   font-size: 24px;
   font-weight: 300;
   line-height: 30px;
   text-transform: uppercase;
 }
+.rates__table-header:nth-of-type(2) {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-left: none;
+  }
+.rates__table-header:nth-of-type(4) {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-right: none;
+  }
+.rates__table-header--hidden {
+  display: none;
+}
 .rates__table-header-bold {
+  display: block;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
+}
+.rates__table-header-hit {
+  position: absolute;
+  top: 12px;
+  left: -50px;
+  transform: rotate(-45deg);
+
+  width: 150px;
+
+  content: 'хит';
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+
+  background: @contacts-phone;
 }
 .rates__table-item {
   height: 56px;
