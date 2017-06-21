@@ -10,7 +10,7 @@
 .rates__table {
   width: 840px;
   margin-bottom: 44px;
-
+  overflow: hidden;
   background: white;
   border-collapse: collapse;
 }
@@ -18,7 +18,7 @@
   position: relative;
   height: 98px;
   overflow: hidden;
-  background-color: @header-bg;
+  background-color: @contacts-text;
   border: 2px solid @border-input;
    border-top: none;
   border-bottom: none;
@@ -74,51 +74,39 @@
   line-height: 30px;
   text-transform: uppercase;
 }
+  .rates__table-header-hit::after {
+  position: absolute;
+    top: 12px;
+    left: -50px;
+    transform: rotate(-45deg);
+
+  width: 150px;
+
+  content: 'хит';
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+
+  background: @form-label-pink;
+  }
+.rates__table-item--included {
+  background: url(../img/icon-yes.svg) 92% 50% no-repeat;
+  background-size: 30px auto;
+}
+.rates__table-item--not-included {
+  background: url(../img/icon-no.svg) 92% 50% no-repeat;
+}
 @media @tablet-widths {
   .rates {
-    width: 620px;
-    margin: 0 auto;
-    padding: 0 40px;
-    padding-top: 35px;
-    padding-bottom: 23px;
-    }
-    }
-    &__table {
-      width: 100%;
-    }
-    &__table-header {
-      height: 77px;
-      font-size: 18px;
-      }
-      &__table-header--full-hidden {
-      display: table-cell;
-      font-size: 0;
-
-      background: #f2f2f2;
-      border: none;
-    }
-    &__table-header-hit::after {
-      position: absolute;
-      top: 5px;
-      left: -52px;
-      transform: rotate(-45deg);
-
-      width: 150px;
-
-      content: 'хит';
-      font-size: 14px;
-      line-height: 30px;
-      text-transform: uppercase;
-      text-align: center;
-
-      background: #d22856;
-    }
-    &__table-item {
-      font-size: 0;
-      width: 25%;
-      height: 44px;
-
-      background-position: 50% 50%;
-    }
+  width: 620px;
+  margin: 0 auto;
+  padding: 0 40px;
+  padding-top: 35px;
+  padding-bottom: 23px;
+}
+.rates__table {
+  width: 100%;
+}
 
 }
