@@ -1,11 +1,26 @@
+.promo {
+  position: relative;
+  z-index: 5;
+  background-image: url(../img/iphone-screen-mobile@1x-cut.png);
+  background-size: 157px 320px;
+  background-repeat: no-repeat;
+  background-position: center 10%;
+}
 .promo__description {
-  background-color: @form-bg-grey;
+  padding-top: 120px;
+  padding-bottom: 286px;
+  background: linear-gradient(170deg, transparent 8%, @bg-photo-form 8%);
+  background-size: 100%;
+  font-family: "Open Sans";
+  line-height: 24px;
+  text-align: center;
 }
 .promo__header-text {
   color: @contacts-text;
   font-family: "Open Sans";
   font-size: 24px;
   font-weight: 300;
+  text-align: center;
 }
 .promo__thesis-wrapper {
   padding-left: 33px;
@@ -14,11 +29,6 @@
 .promo__thesis-wrapper:nth-child(3) {
   padding-left: 24px;
   padding-right: 24px;
-}
-.promo__description {
-  font-family: "Open Sans";
-  line-height: 24px;
-  text-align: center;
 }
 .promo__thesis-header {
   color: #000000;
@@ -29,4 +39,73 @@
   color: @contacts-text;
   font-size: 14px;
   font-weight: 400;
+}
+.promo__science-block {
+  display: none;
+}
+@media @tablet-widths {
+.promo {
+  width: 660px;
+  background-position: top;
+}
+.promo__header {
+  width: 590px;
+  margin: 0 auto;
+  padding-bottom: 23px;
+}
+.promo__header-text {
+  font-size: 40px;
+}
+.promo__header-text:nth-child(2) {
+  width: 350px;
+  margin: 0 auto;
+}
+.promo__thesis-wrapper {
+  width: 310px;
+  padding-left: 330px;
+}
+.promo__thesis-wrapper:nth-child(3) {
+  padding-left: 330px;
+}
+.promo__description {
+  padding-top: 120px;
+  padding-bottom: 45px;
+  background: linear-gradient(173deg, transparent 15%, @bg-photo-form 15%);
+  background-size: 100%;
+}
+.promo__thesis-text {
+  text-align: left;
+}
+.promo__science-block {
+   display: block;
+}
+.promo__science-block-wrapper {
+  width: 295px;
+  box-sizing: border-box;
+  padding-top: 102px;
+  margin-left: 329px;
+}
+.promo__science-header {
+  display: block;
+  width: 170px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}
+.promo__science-header span {
+  display: block;
+}
+.promo__science-info {
+  width: 300px;
+  padding: 0;
+  margin-bottom: 10px;
+  color: @contacts-text;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.promo__science-ref {
+  color: @contacts-phone;
+  text-decoration: underline;
+}
 }

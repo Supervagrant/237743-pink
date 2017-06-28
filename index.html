@@ -9,13 +9,11 @@
     <header class="page-header">
       <h1 class="page-header__title page-header__title--hidden">Приложение Pink</h1>   <!-- скрыть! -->
       <nav class="main-nav">
-        <div class="main-nav__logo-wrapper">
+        <div class="main-nav__logo-wrapper--open">
           <a class="page-header__logo"><img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип приложения Пинк"></a>
-          <div class="toggle-nav">
-            <button class="toggle-nav__btn"></button>
-          </div>
+          <button class="toggle-menu--closed"></button>
         </div>
-        <ul class="main-nav__list">
+        <ul class="main-nav__list no-js">
           <li class="main-nav__item"><a class="main-nav__link main-nav__link--active">Главная</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
@@ -25,8 +23,8 @@
     </header>
     <main class="page-main">
       <section class="downloads">
-        <!--<img src="img/bg-back-mobile@1x.jpg" width="320" height="462" alt="Пример применения приложения Пинк">-->
         <div class="downloads__content-wrapper">
+          <p class="downloads__promo">Взгляните на жизнь иначе!</p>
           <a href="#" class="btn btn--downoloads">Скачать приложение</a>
           <div class="downloads__os-choice">
             <a href="#" class="downloads__os downloads__os--ios">ios</a>
@@ -55,18 +53,26 @@
             <p class="promo__thesis-text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
           </div>
         </div>
+        <div class="promo__science-block">
+        <div class="promo__science-block-wrapper">
+          <b class="promo__science-header"><span>Эффект</span> на 24 часа!</b>
+          <p class="promo__science-info">Британские ученые провели исследования<span> и доказали, что положительный эффект от использования приложения длится целые сутки!</span></p>
+          <a class="promo__science-info promo__science-ref" href="#">Узнать больше об исследовании</a>
+        </div>
+      </div>
       </section>
       <section class="reviews">
         <div class="reviews__item reviews__item--1">
-          <b class="reviews__author-name">Николай Петров</b>
+          <p class="reviews__author-name">Николай Петров</p>
+          <p class="reviews__author-position">25 лет, водитель трамвая</p>
           <p class="reviews__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </div>
         <div class="reviews__item reviews__item--2">
-          <b class="reviews__author-name">Иван Иванов</b>
+          <p class="reviews__author-name">Иван Иванов</p>
           <p class="reviews__content">"Я - директор, очень суров по природе. Мои подчиненные посоветовали мне Pink, чтобы я стал смотреть на мир через розовые очки и подобрел. Это и вправду помогло! Я даже всем повысил зарплату!"</p>
         </div>
         <div class="reviews__item reviews__item--3">
-          <b class="reviews__author-name">Петр Петров</b>
+          <p class="reviews__author-name">Петр Петров</p>
           <p class="reviews__content">"Я - блогер, и мне всегда нехватало новых подписчиков, я не знал, чем их удивить. Но с появлением в моей жизни нового приложения у меня больше нет таких проблем! Мой аккаунт всегда можно узнать среди тысяч других аккаунтов моих конкурентов."</p>
         </div>
         <div class="switches">
@@ -81,24 +87,28 @@
       <section class="rates">
         <table class="rates__table">
           <tr class="rates__row">
-            <th class="rates__table-header"></th>
-            <th class="rates__table-header"><span class="rates__table-header-bold">стандарт</span> 3,99 usd</th>
-            <th class="rates__table-header"></th>
+            <th class="rates__table-header rates__table-header--hidden rates__table-header--full-hidden ">скрытая ячейка</th>
+            <th class="rates__table-header"><span class="rates__table-header-bold">База</span> 1,99 USD</th>
+            <th class="rates__table-header rates__table-header-hit"><span class="rates__table-header-bold">стандарт</span> 3,99 usd</th>
+            <th class="rates__table-header"><span class="rates__table-header-bold">Анлим</span> 9,99 USD</th>
           </tr>
           <tr class="rates__row">
-            <td class="rates__table-item"></td>
+            <td class="rates__table-item rates__table-item--hidden">Розовый фильтр</td>
+            <td class="rates__table-item rates__table-item--included">розовый фильтр</td>
             <td class="rates__table-item rates__table-item--included">Розовый фильтр</td>
-            <td class="rates__table-item"></td>
+            <td class="rates__table-item rates__table-item--included">розовый фильтр</td>
           </tr>
           <tr class="rates__row">
-            <td class="rates__table-item"></td>
+            <td class="rates__table-item rates__table-item--hidden">Смайлики</td>
+            <td class="rates__table-item rates__table-item--included">смайлики</td>
             <td class="rates__table-item rates__table-item--included">Смайлики</td>
-            <td class="rates__table-item"></td>
+            <td class="rates__table-item rates__table-item--included">смайлики</td>
           </tr>
           <tr class="rates__row">
-            <td class="rates__table-item"></td>
+            <td class="rates__table-item rates__table-item--hidden">Комментарии</td>
+            <td class="rates__table-item rates__table-item--not-included">комментарии</td>
             <td class="rates__table-item rates__table-item--not-included">Комментарии</td>
-            <td class="rates__table-item"></td>
+            <td class="rates__table-item rates__table-item--included">комментарии</td>
             </tr>
         </table>
         <div class="switches switches--rates">
@@ -132,5 +142,20 @@
         </div>
       </section>
     </main>
+    <footer class="page-footer page-footer--hidden">
+      <div class="footer-logo">
+        <a class="footer-logo__link" href="index.html"><img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип компании Пинк">PINK</a>
+      </div>
+      <div class="social">
+        <a class="social__item social__item--twitter" href="https://twitter.com/htmlacademy_ru">twitter</a>
+        <a class="social__item social__item--facebook" href="https://www.facebook.com/htmlacademy">facebook</a>
+        <a class="social__item social__item--youtube" href="https://www.youtube.com/user/htmlacademyru">youtube</a>
+      </div>
+      <div class="copyright">
+        <p class="copyright__description">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/">HTML Academy</a>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>

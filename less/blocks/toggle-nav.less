@@ -1,0 +1,35 @@
+.toggle-menu--closed {
+  width: 24px;
+  height: 23px;
+  top: 21px;
+  right: 19px;
+  position: absolute;
+  background-image: url("../img/icon-menu-cross.svg");
+  background-color: inherit;
+  border: 0;
+  cursor: pointer;
+}
+.toggle-menu {
+  width: 50px;
+  height: 24px;
+  top: 21px;
+  right: 20px;
+  position: absolute;
+  background-image: url("../img/icon-menu-burger.svg");
+  background-color: inherit;
+  border: 0;
+  cursor: pointer;
+}
+.no-js .toggle-menu {
+  display:none;
+}
+@media @tablet-widths {
+.toggle-menu {
+  top: 45px;
+  right: 19px;
+}
+.toggle-menu--closed {
+  top: 45px;
+  right: 19px;
+}
+}
